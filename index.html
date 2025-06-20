@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Digital - Fraga Multiespacios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="magazine">
+
+        <div class="page cover-page">
+            <header class="hero">
+                <div class="hero-content">
+                    <img src="img/CARTA NUEVA.jpg" alt="Logo Fraga Multiespacios" class="main-logo">
+                    <p class="subtitle">MULTIESPACIOS DESDE 2010</p>
+                </div>
+            </header>
+        </div>
+
+        <div class="page intro-page">
+            <div class="container legend-container">
+                <h2 class="page-title-fraga">Fraga</h2>
+                <p class="legend-text">Dicen que bajo las arenas del desierto de Atacama, no solo se esconde oro... también se ocultan secretos. Uno de ellos es el Tesoro de Fraga, enterrado por un misterioso coronel cargado de riquezas que regresó de la Guerra del Pacífico.</p>
+                <p class="legend-text">Cuenta la leyenda que Fraga ocultó su fortuna en las cercanías del Cerro Bramador, no muy lejos de aquí, en túneles que solo se abren para los valientes. Son muchos los que lo han buscado... pero todos han acabado desapareciendo en el desierto.</p>
+                <p class="legend-text">La maldición advierte que quien se atreva a tocar el tesoro y no permanezca a su lado durante 24 horas, desatará la desgracia sobre sí mismo. Por eso, mientras algunos siguen buscando el tesoro en el desierto... otros ya lo encontraron aquí, entre sabores, risas y canciones.</p>
+                <p class="legend-text">Así que, si alguna vez logras ver una luz extraña danzando entre los cerros... no temas. Son señales del tesoro, recordándonos que aquí en FRAGA, la leyenda sigue viva.</p>
+            </div>
+        </div>
+
+        <div class="page footer-page">
+            <footer>
+                <p>Fraga Multiespacios &copy; 2025</p>
+            </footer>
+        </div>
+
+    </div> <nav class="menu-nav">
+        <a href="#happy-hour-page">Happy Hour</a>
+        <a href="#tablas-page">Tablas</a>
+        <a href="#picoteos-page">Picoteos</a>
+        <a href="#cocteles-page">Cócteles</a>
+        <a href="#cervezas-page">Cervezas</a>
+        <a href="#destilados-page">Destilados</a>
+    </nav>
+
+    <script>
+        // La navegación con scroll suave, si no se usa un flipbook completo:
+        document.querySelectorAll('.menu-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
